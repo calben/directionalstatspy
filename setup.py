@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-from myapp import __version__
+from directional import __version__
 
 
 def read(fname):
@@ -10,7 +10,7 @@ def read(fname):
 requirements = []
 
 setup(
-    name = "Directional Statistics in Python",
+    name = "directionalstatspy",
     version = ".".join(map(str, __version__)),
     description = "",
     long_description = read('README.rst'),

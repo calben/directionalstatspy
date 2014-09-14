@@ -8,6 +8,10 @@ import pandas as pd
 ###########################
 
 
+def col_names_from_sin_cos_matrix(df):
+	return [col[:-5] for col in sin_cos_matrix.columns]
+
+
 def sin_cos_matrix_to_radian_matrix(sin_cos_matrix):
   radian_matrix = pd.DataFrame(index = sin_cos_matrix.index)
   for name in [col[:-5] for col in sin_cos_matrix.columns]:
@@ -29,7 +33,9 @@ def sin_cos_matrix_to_degrees_matrix(sin_cos_matrix):
 
 def sin_cos_pair_std(sin_cos_matrix):
 	mean = sin_cos_pair_mean(sin_cos_matrix)
-	mean.apply(lambda x : np.sqrt())
+	result = pd.Series(index = sin_cos_matrix.index)
+	for name in col_names_from_sin_cos_matrix(sin_cos_matrix):
+		pass
 
 
 def sin_cos_pair_mean(sin_cos_matrix):

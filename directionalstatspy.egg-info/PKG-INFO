@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: directionalstatspy
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Calem Bendell
+Author-email: calem.j.bendell@gmail.com
+License: MIT
+Description: Directional Statistics in Python
+        ======================================
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
