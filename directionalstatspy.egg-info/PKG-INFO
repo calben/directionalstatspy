@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: directionalstatspy
-Version: 0.0.1
-Summary: UNKNOWN
-Home-page: UNKNOWN
+Version: 0.0.2
+Summary: Directional Statistics in Python
+Home-page: https://github.com/calben/directionalstatspy/
 Author: Calem Bendell
 Author-email: calem.j.bendell@gmail.com
 License: MIT

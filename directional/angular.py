@@ -57,3 +57,5 @@ def sin_cos_matrix_var(sin_cos_matrix):
   for col in result.index:
   	result[col] = 1 - np.sqrt(np.power(mean[col+"--SIN"],2)+ np.power(mean[col+"--COS"],2))
   return result
+
+
