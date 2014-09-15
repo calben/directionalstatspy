@@ -42,3 +42,5 @@ def sin_cos_matrix_mean(sin_cos_matrix):
   return sin_cos_matrix.mean()
 
 
+def sin_cos_matrix_var(sin_cos_matrix):
+  pass

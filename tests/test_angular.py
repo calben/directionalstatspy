@@ -12,4 +12,7 @@ def test_col_names_from_sin_cos_matrix():
 
 
 def test_sin_cos_matrix_to_degrees_matrix():
-	assert demo_angle_matrix.values == sin_cos_matrix_to_degrees_matrix(demo_sin_cos_matrix).values
+	result = sin_cos_matrix_to_degrees_matrix(demo_sin_cos_matrix).values
+	result = np.around(result, decimals = 1)
+	comparison = np.around(demo_angle_matrix.values, decimals = 1)
+	assert np.array_equal(comparison, result) 
