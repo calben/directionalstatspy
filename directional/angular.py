@@ -31,16 +31,29 @@ def sin_cos_matrix_to_degrees_matrix(sin_cos_matrix):
   return sin_cos_matrix_to_radian_matrix(sin_cos_matrix).applymap(np.degrees)
 
 
-def sin_cos_matrix_std(sin_cos_matrix):
-  mean = sin_cos_pair_mean(sin_cos_matrix)
-  result = pd.Series(index = sin_cos_matrix.index)
-  for name in col_names_from_sin_cos_matrix(sin_cos_matrix):
-    pass
-
-
 def sin_cos_matrix_mean(sin_cos_matrix):
   return sin_cos_matrix.mean()
 
 
+def sin_cos_matrix_to_radians_mean(sin_cos_matrix):
+  mean = sin_cos_matrix_mean(sin_cos_matrix)
+  result = pd.Series(index=col_names_from_sin_cos_matrix(sin_cos_matrix))
+  for col in result.index:
+    result[col] = np.arctan2(mean[col+"--SIN"], mean[col+"--COS"])
+  return result
+
+
+def sin_cos_matrix_std(sin_cos_matrix):
+  var = sin_cos_matrix_var(sin_cos_matrix)
+  result = pd.Series(index = var.index)
+  for col in result.index:
+  	result[col] = np.sqrt(-2*np.log(1-var[col])) 
+  return result
+
+
 def sin_cos_matrix_var(sin_cos_matrix):
-  pass
+  mean = sin_cos_matrix_mean(sin_cos_matrix)
+  result = pd.Series(index = col_names_from_sin_cos_matrix(sin_cos_matrix))
+  for col in result.index:
+  	result[col] = 1 - np.sqrt(np.power(mean[col+"--SIN"],2)+ np.power(mean[col+"--COS"],2))
+  return result
