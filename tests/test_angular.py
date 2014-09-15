@@ -12,6 +12,13 @@ def test_col_names_from_sin_cos_matrix():
 	assert cols == ["N-CA-CB-CG", "CA-CB-CG-OD1", "CA-CB-CG-OD2"]
 
 
+def test_sin_cos_matrix_to_radian_matrix():
+	result = sin_cos_matrix_to_radian_matrix(demo_sin_cos_matrix.applymap(np.radians)).values
+	result = np.around(result, decimals = 2)
+	comparison = np.around(demo_radian_matrix.values, decimals = 2)
+	assert np.array_equal(comparison, result) 
+
+
 def test_sin_cos_matrix_to_degrees_matrix():
 	result = sin_cos_matrix_to_degrees_matrix(demo_sin_cos_matrix).values
 	result = np.around(result, decimals = 2)
@@ -19,10 +26,6 @@ def test_sin_cos_matrix_to_degrees_matrix():
 	assert np.array_equal(comparison, result) 
 
 
-def test_sin_cos_matrix_to_radian_matrix():
-	result = sin_cos_matrix_to_radian_matrix(demo_sin_cos_matrix.applymap(np.radians)).values
-	result = np.around(result, decimals = 2)
-	comparison = np.around(demo_radian_matrix.values, decimals = 2)
-	assert np.array_equal(comparison, result) 
-
+def test_sin_cos_matrix_std():
+	pass
 
