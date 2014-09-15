@@ -7,5 +7,6 @@ So here is a Python solution!
 
 
 ### Status
-[![Build Status](https://travis-ci.org/calben/directionalstatspy.svg?branch=master)]
-[[Coverage Status](https://img.shields.io/coveralls/calben/directionalstatspy.svg)]
+![Build Status](https://travis-ci.org/calben/directionalstatspy.svg?branch=master)
+
+![Coverage Status](https://img.shields.io/coveralls/calben/directionalstatspy.svg)
