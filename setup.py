@@ -12,9 +12,9 @@ requirements = []
 setup(
     name = "directionalstatspy",
     version = ".".join(map(str, __version__)),
-    description = "",
+    description = "Directional Statistics in Python",
     long_description = read('README.rst'),
-    url = '',
+    url = 'https://github.com/calben/directionalstatspy/',
     license = 'MIT',
     author = 'Calem Bendell',
     author_email = 'calem.j.bendell@gmail.com',
