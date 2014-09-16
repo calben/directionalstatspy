@@ -5,6 +5,7 @@ README.rst
 setup.cfg
 setup.py
 directional/__init__.py
+directional/angle.py
 directional/angular.py
 directional/vector.py
 directionalstatspy.egg-info/PKG-INFO
