@@ -25,8 +25,8 @@
         </h1>
         <img id='keyboard_icon' src='keybd_closed.png'>
         <h2 class='stats'>
-            38 statements &nbsp;
-            <span class='run hide_run shortkey_r button_toggle_run'>38 run</span>
+            40 statements &nbsp;
+            <span class='run hide_run shortkey_r button_toggle_run'>40 run</span>
             <span class='mis shortkey_m button_toggle_mis'>0 missing</span>
             <span class='exc shortkey_x button_toggle_exc'>0 excluded</span>
             
@@ -120,6 +120,11 @@
 <p id='n57' class='stm run hide_run'><a href='#n57'>57</a></p>
 <p id='n58' class='stm run hide_run'><a href='#n58'>58</a></p>
 <p id='n59' class='stm run hide_run'><a href='#n59'>59</a></p>
+<p id='n60' class='pln'><a href='#n60'>60</a></p>
+<p id='n61' class='pln'><a href='#n61'>61</a></p>
+<p id='n62' class='stm run hide_run'><a href='#n62'>62</a></p>
+<p id='n63' class='stm run hide_run'><a href='#n63'>63</a></p>
+<p id='n64' class='pln'><a href='#n64'>64</a></p>
                 
             </td>
             <td class='text' valign='top'>
@@ -182,6 +187,11 @@
 <p id='t57' class='stm run hide_run'>&nbsp; <span class='key'>for</span> <span class='nam'>col</span> <span class='key'>in</span> <span class='nam'>result</span><span class='op'>.</span><span class='nam'>index</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t58' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>result</span><span class='op'>[</span><span class='nam'>col</span><span class='op'>]</span> <span class='op'>=</span> <span class='num'>1</span> <span class='op'>-</span> <span class='nam'>np</span><span class='op'>.</span><span class='nam'>sqrt</span><span class='op'>(</span><span class='nam'>np</span><span class='op'>.</span><span class='nam'>power</span><span class='op'>(</span><span class='nam'>mean</span><span class='op'>[</span><span class='nam'>col</span><span class='op'>+</span><span class='str'>&quot;--SIN&quot;</span><span class='op'>]</span><span class='op'>,</span><span class='num'>2</span><span class='op'>)</span><span class='op'>+</span> <span class='nam'>np</span><span class='op'>.</span><span class='nam'>power</span><span class='op'>(</span><span class='nam'>mean</span><span class='op'>[</span><span class='nam'>col</span><span class='op'>+</span><span class='str'>&quot;--COS&quot;</span><span class='op'>]</span><span class='op'>,</span><span class='num'>2</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t59' class='stm run hide_run'>&nbsp; <span class='key'>return</span> <span class='nam'>result</span><span class='strut'>&nbsp;</span></p>
+<p id='t60' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t61' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t62' class='stm run hide_run'><span class='key'>def</span> <span class='nam'>radian_matrix_std</span><span class='op'>(</span><span class='nam'>radian_matrix</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t63' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>sin_cos_matrix_to_radian_std</span><span class='op'>(</span><span class='nam'>radian_matrix_to_sin_cos_matrix</span><span class='op'>(</span><span class='nam'>radian_matrix</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t64' class='pln'><span class='strut'>&nbsp;</span></p>
                 
             </td>
         </tr>

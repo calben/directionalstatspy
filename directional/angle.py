@@ -59,3 +59,6 @@ def sin_cos_matrix_var(sin_cos_matrix):
   return result
 
 
+def radian_matrix_std(radian_matrix):
+	return sin_cos_matrix_to_radian_std(radian_matrix_to_sin_cos_matrix(radian_matrix))
+

@@ -59,4 +59,9 @@ def test_sin_cos_matrix_to_radian_std():
 	assert np.array_equal(comparison[0], result)
 
 
+def test_radian_matrix_std():
+	result = radian_matrix_std(demo_radian_matrix).values
+	result = np.around(result, decimals = 2)
+	comparison = np.around(demo_radian_std.values, decimals = 2)
+	assert np.array_equal(comparison[0], result)
 
