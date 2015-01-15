@@ -25,3 +25,9 @@ Ain't that beautiful?
 
 As the library becomes more complicated (which is to say, as I encounter more problem I need to solve of this variety), it may become more complicated.
 But really, DataFrames and Series are beautiful and dandy for now :-)
+
+
+## Is this project still alive?
+
+Is sort of a good answer?
+Directionalstatspy does everything I need to do for my application, so until I need it to do something more it probably won't see much in the way of updates.
